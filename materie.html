@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materie — Nicola Gasparroni</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Gasparroni <span>N.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto gap-1">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="chi-sono.html">Chi Sono</a></li>
+                    <li class="nav-item"><a class="nav-link" href="passioni.html">Passioni</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="materie.html">Materie</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ed-civica.html">Ed. Civica</a></li>
+                    <li class="nav-item"><a class="nav-link" href="fsl.html">FSL</a></li>
+                    <li class="nav-item"><a class="nav-link" href="curriculum.html">Curriculum</a></li>
+                    <li class="nav-item"><a class="nav-link" href="futuro.html">Futuro</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="page-header reveal">
+            <p class="page-label">Percorso scolastico</p>
+            <h1>Materie e Progetti</h1>
+            <p class="text-muted-custom mt-2">Clicca su una materia per scoprirne la descrizione.</p>
+        </div>
+    </div>
+
+    <main class="container pb-5">
+        <div class="row g-4 mb-5">
+            <div class="col-md-6 reveal">
+                <div class="card-dark h-100">
+                    <h5 style="font-weight:700; margin-bottom:20px; color:var(--accent); font-family:'DM Sans',system-ui,sans-serif;">💻 Area Tecnica</h5>
+                    <div class="row g-3">
+                        <div class="col-6"><div class="materia-card" onclick="apriModale('Informatica', 'L \'argomento che mi ha appassionato di più è stato quello dei database , perché permette di organizzare enormi quantità di informazioni in modo veloce ed efficiente. Oggi sono fondamentali in ogni settore, anche nel calcio moderno, dove vengono utilizzati per statistiche, prestazioni e analisi tattiche. ')"><div class="materia-icon">💻</div><h5>Informatica</h5><p> Database, dati e organizzazione digitale </p></div></div>
+                        <div class="col-6"><div class="materia-card" onclick="apriModale('Sistemi e Reti', ' L \'ambito che ho trovato più stimolante è stato quello della sicurezza informatica, architetture di rete, configurazione di router e switch. Collegata al percorso di Ed. Civica sulla cybersecurity.')"><div class="materia-icon">🌐</div><h5>Sistemi e Reti</h5><p>Reti, protocolli, sicurezza</p></div></div>
+                        <div class="col-6"><div class="materia-card" onclick="apriModale('TPSIT', 'Mi ha particolarmente affascinato lo studio dell\'ingegneria del software. Imparare a progettare un\'applicazione analizzandone i requisiti, l\'architettura e il ciclo di vita mi ha permesso di capire che dietro a un buon codice c\'è sempre una solida pianificazione strategica e strutturale.')"><div class="materia-icon">🛠️</div><h5>TPSIT</h5><p>Sviluppo web, client-server, API</p></div></div>
+                        <div class="col-6"><div class="materia-card" onclick="apriModale('Matematica', 'Studio di funzioni, limiti, derivate e integrali. La matematica fornisce gli strumenti logici fondamentali per la programmazione e l\'analisi degli algoritmi.')"><div class="materia-icon">📐</div><h5>Matematica</h5><p>Funzioni, analisi, logica</p></div></div>
+                        <div class="col-6"><div class="materia-card" onclick="apriModale('IA', ' Il tema che mi ha letteralmente conquistato è stato quello delle reti neurali. Scoprire come algoritmi complessi riescano a imitare il funzionamento del cervello umano per riconoscere pattern, elaborare dati e apprendere autonomamente mi ha aperto le porte verso il futuro della tecnologia')"><div class="materia-icon">📡</div><h5>IA</h5><p>Reti neurali</p></div></div>
+                        <div class="col-6"><div class="materia-card" onclick="apriModale('GPOI', 'Gestione Progetto e Organizzazione d\'Impresa: metodologie di project management, gestione dei team e organizzazione aziendale nel settore IT.')"><div class="materia-icon">📊</div><h5>GPOI</h5><p>Project management, organizzazione</p></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 reveal">
+                <div class="card-dark h-100">
+                    <h5 style="font-weight:700; margin-bottom:20px; color:var(--accent); font-family:'DM Sans',system-ui,sans-serif;">📖 Area Umanistica</h5>
+                    <div class="row g-3">
+                        <div class="col-6"><div class="materia-card" onclick="apriModale('Italiano', 'Tra gli autori studiati, quello che mi ha colpito di più è Giovanni Pascoli. Mi ha affascinato la sua poetica del fanciullino e la sua capacità di catturare il mistero e le emozioni nascoste nelle piccole cose della natura, offrendo una chiave di lettura profonda e sensibile della realtà.')"><div class="materia-icon">📝</div><h5>Italiano</h5><p>Letteratura, analisi, scrittura</p></div></div>
+                        <div class="col-6"><div class="materia-card" onclick="apriModale('Inglese', ' Mi ha aiutato a comprendere meglio il mondo moderno attraverso testi, autori e temi attuali, come quelli affrontati da James Joyce nelle sue opere.')"><div class="materia-icon">🇬🇧</div><h5>Inglese</h5><p>Lingua inglese, studio Letteratura e lingua tecninca</p></div></div>
+                        <div class="col-6"><div class="materia-card" onclick="apriModale('Storia', 'Il percorso che ho trovato più significativo è stato quello dedicato ai grandi conflitti mondiali del Novecento. Analizzare le cause, le dinamiche e le drammatiche conseguenze delle guerre mi ha aiutato a comprendere a fondo le radici del mondo contemporaneo e l\'importanza della memoria storica.')"><div class="materia-icon">🏛️</div><h5>Storia</h5><p>Novecento, tecnologia, totalitarismi</p></div></div>
+                        <div class="col-6"><div class="materia-card" onclick="window.location.href='ed-civica.html'" style="border-color:var(--accent-border);"><div class="materia-icon">⚖️</div><h5>Ed. Civica</h5><p>Libertà digitale, GDPR, cybersecurity</p></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h4 style="font-size:1.4rem; margin-bottom:20px;" class="reveal">🚀 I miei Progetti</h4>
+        <div class="row g-3 reveal">
+            <div class="col-md-4">
+                <div class="card-dark h-100">
+                    <span class="badge-accent mb-2 d-inline-block">3° Anno · C# / Windows Forms</span>
+                    <h6 style="font-weight:700; margin-bottom:8px; font-family:'DM Sans',system-ui,sans-serif;">Gioco del Tetris</h6>
+                    <p class="text-muted-custom" style="font-size:0.85rem; margin:0;">Sviluppo del celebre gioco arcade in ambiente desktop, sfruttando C# e l'interfaccia grafica Windows Forms.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card-dark h-100">
+                    <span class="badge-accent mb-2 d-inline-block">4° Anno · Web Development</span>
+                    <h6 style="font-weight:700; margin-bottom:8px; font-family:'DM Sans',system-ui,sans-serif;">Simulatore "SNAI"</h6>
+                    <p class="text-muted-custom" style="font-size:0.85rem; margin:0;">Portale web per la simulazione di scommesse sportive, con gestione utenti, quote dinamiche e interfaccia moderna.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card-dark h-100" style="border-left:3px solid var(--accent);">
+                    <span class="badge-accent mb-2 d-inline-block">5° Anno · Sito Web</span>
+                    <h6 style="font-weight:700; margin-bottom:8px; font-family:'DM Sans',system-ui,sans-serif;">Sito Web "3elle"</h6>
+                    <p class="text-muted-custom" style="font-size:0.85rem; margin:0;">Portale web dedicato all'orientamento scolastico degli studenti, con design responsive e funzionalità avanzate.</p>
+                </div>
+            </div>
+        </div>
+<!----inizio commento
+        <h4 style="font-size:1.4rem; margin:40px 0 20px;" class="reveal">💼 Stage FSL — Pluservice</h4>
+        <div class="card-dark reveal">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6">
+                    <span class="badge-blue mb-2 d-inline-block">2024/25 · 157 ore</span>
+                    <h6 style="font-weight:700; margin-bottom:8px; font-family:'DM Sans',system-ui,sans-serif;">Pluservice S.R.L. — Marzocca (AN)</h6>
+                    <p class="text-muted-custom" style="font-size:0.87rem; margin:0;">Pluservice è specializzata nello sviluppo di soluzioni software per mobilità e sosta tariffata.</p>
+                </div>
+                <div class="col-md-6">
+                    <h6 style="font-weight:600; margin-bottom:8px; font-family:'DM Sans',system-ui,sans-serif;">Il mio percorso</h6>
+                    <p class="text-muted-custom" style="font-size:0.87rem; margin:0 0 12px;">Ho osservato da vicino il ciclo di sviluppo software in un contesto professionale reale, acquisendo competenze pratiche applicabili.</p>
+                    <a href="fsl.html" class="btn-accent" style="font-size:0.82rem; padding:7px 16px;">Approfondisci →</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    fine commento-->
+
+    <div id="modale-materia" class="modale-overlay">
+        <div class="modale-box">
+            <button class="modale-close" onclick="chiudiModale()" aria-label="Chiudi">&times;</button>
+            <span class="badge-accent mb-3 d-inline-block">Materia</span>
+            <h3 id="modal-titolo"></h3>
+            <p id="modal-descrizione" class="text-muted-custom mb-0" style="font-size:0.93rem;"></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo">NG</div>
+            <p class="mb-1">Nicola Gasparroni · Esame di Stato 2026</p>
+            <p>Istituto Marconi Pieralisi — Jesi</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
