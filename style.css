@@ -1,7 +1,4 @@
-/* ============================================================
-   STYLE.CSS — Nicola Gasparroni · Esame di Stato 2026
-   Tema: Minimal bianco — pulito, tipografico, professionale
-   ============================================================ */
+
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap');
 
@@ -341,6 +338,38 @@ footer .footer-logo {
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
 .reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* === EXAM BADGE & LARGE MODAL === */
+.badge-esame {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 0.65rem;
+    padding: 2px 8px;
+    border-radius: 20px;
+    background: #fff8e1;
+    border: 1px solid #ffe082;
+    color: #b45309;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+.materia-esame {
+    border-color: var(--accent-border);
+    position: relative;
+}
+.materia-esame::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 3px;
+    height: 100%;
+    background: var(--accent);
+    border-radius: 10px 0 0 10px;
+}
+.modale-box-large {
+    max-width: 600px;
+    max-height: 85vh;
+    overflow-y: auto;
+}
 
 /* === RESPONSIVE === */
 @media (max-width: 768px) {
