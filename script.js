@@ -59,9 +59,17 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
 // === MODALE MATERIE ===
 // Mostra una modale con titolo e descrizione di una materia.
 // apriModale() è chiamata direttamente dall'HTML con onclick.
-function apriModale(titolo, descrizione) {
+function apriModale(titolo, descrizione, immagine) {
     document.getElementById('modal-titolo').innerText = titolo;
     document.getElementById('modal-descrizione').innerText = descrizione;
+    const img = document.getElementById('modal-immagine');
+    if (immagine) {
+        img.src = immagine;
+        img.alt = titolo;
+        img.style.display = 'block';
+    } else {
+        img.style.display = 'none';
+    }
     document.getElementById('modale-materia').classList.add('open');
     document.body.style.overflow = 'hidden'; // blocca lo scroll di sfondo
 }
